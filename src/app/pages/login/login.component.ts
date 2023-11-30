@@ -42,6 +42,7 @@ export class LoginComponent implements OnInit {
   }
 
   submitGuest() {
-
+    localStorage.setItem('accessToken', btoa(`user:password`));
+    this.router.navigate(['/']);
   }
 }

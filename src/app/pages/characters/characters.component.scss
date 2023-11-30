@@ -74,3 +74,19 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
 }
+
+.character-image {
+    width: 100%;
+    min-height: 375px;
+    object-fit: cover;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card {
+    min-height: 520px !important;
+}
