@@ -1,0 +1,25 @@
+<div class="main-body d-flex align-items-center py-4 bg-body-tertiary">
+  <main class="form-signin w-100 m-auto">
+    <form  [formGroup]="form" (ngSubmit)="submit()">
+      <img class="mb-4" style="margin: auto;" src="https://logos-world.net/wp-content/uploads/2020/11/Marvel-Emblem.png" alt="" width="250px">
+      <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="username" placeholder="Noobmaster69"  formControlName="userName"> 
+        <label for="username">User Name</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="btn-groups">
+        <button class="btn btn-primary w-100 py-2" type="submit" >Sign in</button>
+        <button class="btn btn-secondary w-100 py-2" type="button" (click)="submitGuest()" >Guest</button>
+      </div>
+      
+      <p class="mt-5 mb-3 text-body-secondary">&copy; 2023–2024</p>
+    </form>
+  </main>
+</div>
